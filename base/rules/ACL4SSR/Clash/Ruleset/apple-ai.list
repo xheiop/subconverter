@@ -1,9 +1,34 @@
-DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
+# ===== 基础 / 网关 =====
 DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN,cp4.cloudflare.com
+DOMAIN,probe.icloud.com
+DOMAIN,metrics.icloud.com
 DOMAIN,guzzoni.apple.com
-DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+
+# ===== Apple Intelligence / Private Cloud Compute =====
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN,apple-relay.akamaized.net
+DOMAIN,apple-carry-relay.cloudflare.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+
+# ===== Apple Intelligence relay / bootstrap（mask 系列） =====
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+DOMAIN,mask-api.icloud.com
+DOMAIN,mask-api.fe.apple-dns.net
+DOMAIN,mask-api.fe2.apple-dns.net
+DOMAIN,mask-t.apple-dns.net
+DOMAIN,mask.apple-dns.net
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN-SUFFIX,mask.icloud.com
+
+# ===== Apple region determination / App Store =====
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,ls.apple.com
 DOMAIN-SUFFIX,apps.mzstatic.com
+
+# ===== Siri =====
+DOMAIN,seed.siri.apple.com
+DOMAIN,api-siri-prod.apple.com
+DOMAIN-KEYWORD,siri
